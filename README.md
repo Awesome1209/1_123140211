@@ -1,48 +1,40 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Desktop (JVM).
+# Tugas Praktikum 1 - Pengembangan Aplikasi Mobile
 
-* [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./composeApp/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./composeApp/src/jvmMain/kotlin)
-    folder is the appropriate location.
+Repository ini berisi hasil pengerjaan Tugas Praktikum Minggu 1 untuk mata kuliah Pengembangan Aplikasi Mobile (IF25-22017).
 
-* [/iosApp](./iosApp/iosApp) contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+## 👤 Identitas Mahasiswa
+* **Nama**: Awi Septian Prasetyo
+* **NIM**: 123140201
+* **Program Studi**: Teknik Informatika
+* **Kampus**: Institut Teknologi Sumatera (ITERA)
 
-### Build and Run Android Application
+## 📱 Screenshot Aplikasi
+Berikut adalah tampilan aplikasi yang berjalan di Android Emulator:
 
-To build and run the development version of the Android app, use the run configuration from the run widget
-in your IDE’s toolbar or build it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:assembleDebug
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:assembleDebug
-  ```
+![Tampilan Aplikasi Tugas 1]
+## Desktop (via JVM Run)
+(<img width="2560" height="1440" alt="Screenshot (208)" src="https://github.com/user-attachments/assets/f944e361-8b08-477e-96d5-c7716e5f578b" />)
+## Android (via Emulator Medium Phone API 36.1)
+(![WhatsApp Image 2026-02-08 at 10 24 58 PM](https://github.com/user-attachments/assets/c1aee307-5692-4b34-a80c-44fa8942e7eb)
 
-### Build and Run Desktop (JVM) Application
 
-To build and run the development version of the desktop app, use the run configuration from the run widget
-in your IDE’s toolbar or run it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:run
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:run
-  ```
+## 📝 Deskripsi Tugas
+Sesuai instruksi praktikum, aplikasi ini dibuat menggunakan **Kotlin Multiplatform (KMP)** dengan modifikasi sebagai berikut:
+1.  **Setup Environment**: Instalasi Android Studio, JDK 17, dan Plugin KMP.
+2.  **Modifikasi UI**: Mengubah teks "Hello World" menjadi sapaan Nama Lengkap.
+3.  **Penambahan Fitur**: Menambahkan informasi NIM di bawah nama.
+4.  **Logika Platform**: Memastikan aplikasi tetap menampilkan informasi platform yang sedang berjalan (Android/Desktop).
 
-### Build and Run iOS Application
+## 🛠️ Teknologi yang Digunakan
+* **Bahasa Pemrograman**: Kotlin
+* **Framework**: Kotlin Multiplatform (KMP)
+* **UI Toolkit**: Compose Multiplatform
+* **IDE**: Android Studio
 
-To build and run the development version of the iOS app, use the run configuration from the run widget
-in your IDE’s toolbar or open the [/iosApp](./iosApp) directory in Xcode and run it from there.
-
----
-
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## 🚀 Cara Menjalankan Proyek
+Jika ingin menjalankan kode ini di mesin lokal:
+1.  Pastikan **JDK 17** dan **Android Studio** sudah terinstall.
+2.  Clone repository ini atau download sebagai ZIP.
+3.  Buka proyek di Android Studio dan tunggu proses **Gradle Sync** selesai.
+4.  Pilih konfigurasi **`composeApp`**.
+5.  Tekan tombol **Run** (▶) untuk menjalankan di Android Emulator.
